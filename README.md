@@ -4,6 +4,11 @@ A silly little game where you chase an image around the screen. That's it. No de
 
 ---
 
+## Play the Game Here!  
+👉 [Catch Me If You Can](https://catch-me-if-you-can-alpha.vercel.app/)  
+
+---
+
 ## Why does this exist?  
 Honestly, I have no idea. It just felt like a good idea at the time.  
 
