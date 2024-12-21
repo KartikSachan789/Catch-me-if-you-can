@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catch Me if you can</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .player-area {
+        /* background-color: crimson; */
+        height: 80vh;
+        width: 80vw;
+        margin: 30px;
+      }
+      .player img {
+        height: 100px;
+      }
+
+      .player {
+        position: relative;
+        top: 45%;
+        left: 45%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Catch me if You can 😈</h1>
+    <div class="player-area">
+      <div class="player">
+        <img src="/IMG.jfif" alt="" />
+      </div>
+    </div>
+
+    <script>
+      const player = document.querySelector(".player");
+      const playerArea = document.querySelector(".player-area");
+      player.addEventListener("mouseover", function () {
+        const min = 0;
+        const max = 80;
+        let random1 = Math.floor(Math.random() * (max - min + 1)) + min;
+        let random2 = Math.floor(Math.random() * (max - min + 1)) + min;
+        player.style.top = `${random1}%`;
+        player.style.left = `${random2}%`;
+      });
+    </script>
+  </body>
+</html>
